@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .mainWrapper {
@@ -22,8 +23,15 @@ header {
 
 aside {
     grid-row: 1 / 4;
-    background-color: rgb(62, 144, 221);
+    background-color: rgb(70, 148, 221);
     color: white;
+}
+aside > ul {
+    display: grid;
+    grid-template-rows: 100px repeat(5, 1fr) 100px repeat(3, 1fr);
+    gap: 8px;
+    padding: 16px;
+    font-weight: bold;
 }
 
 
